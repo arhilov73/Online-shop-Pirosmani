@@ -1,0 +1,299 @@
+
+/* FONTS */
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: local('TT Norms Pro Medium'), local('TT-Norms-Pro-Medium'),
+        url('/fonts/TTNormsPro\ 500/TTNormsPro-Medium.woff2') format('woff2'),
+        url('/fonts/TTNormsPro\ 500/TTNormsPro-Medium.woff') format('woff'),
+        url('/fonts/TTNormsPro\ 500/TTNormsPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: local('TT Norms Pro Regular'), local('TT-Norms-Pro-Regular'),
+        url('/fonts/TTNormsPro\ 400/TTNormsPro-Regular.woff2') format('woff2'),
+        url('/fonts/TTNormsPro\ 400/TTNormsPro-Regular.woff') format('woff'),
+        url('/fonts/TTNormsPro\ 400/TTNormsPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TT Hoves';
+    src: local('TT Hoves Regular'), local('TT-Hoves-Regular'),
+        url('/fonts/TTHoves\ 400/TTHoves-Regular.woff2') format('woff2'),
+        url('/fonts/TTHoves\ 400/TTHoves-Regular.woff') format('woff'),
+        url('/fonts/TTHoves\ 400/TTHoves-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+/* //FONTS */
+
+/* BODY SELECTORS */
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: TT Norms Pro;
+    font-style: normal;
+    color: #333333;
+    /* background-color: #00AC4E; */
+}
+.wrapper{
+    margin: auto;
+    max-width: 1440px;
+    background-color: #FFFFFF;
+}
+header{
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 12%);
+    margin-bottom: 60px;
+}
+main{
+    margin: auto;
+    max-width: 944px;
+}
+a{
+    text-decoration: none;
+}
+/* //BODY SELECTORS */
+
+
+/* LOGO */
+.navbar-brand{
+    margin: 0 50px 0 0;
+}
+/* LOGO */
+
+
+/* NAVBAR */
+.navbar{
+    margin: auto;
+    padding-top: 28px;
+    max-width: 994px;
+}
+.container{
+    padding: 0;
+}
+.nav-item + .nav-item {
+    margin-left: 34px;
+}
+@media (max-width: 992px){
+    .nav-item + .nav-item {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+.nav-item span{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.nav-link{
+    padding: 11px 0 0 0;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22px;
+    color: #333333 !important;
+    transition: all 0.2s ease-in;
+}
+.nav-link:hover {
+    color: #000000 !important;
+    opacity: 0.8;
+    transform: translateX(-1px) translateY(-1px);
+}
+.nav-link:active {
+    color: #000000 !important;
+    opacity: 0.8;
+    transform: translateX(-1px) translateY(-1px);
+}
+.dropdown-menu{
+    position: absolute;
+    top: -15px;
+    left: -17px;
+
+    border-radius: 12px;
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 12%);
+}
+.dropdown-menu .nav-link{
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 15px 0 0 25px !important;
+}
+.dropdown-item{
+    font-family: TT Hoves;
+    font-size: 10.6604px;
+    line-height: 1.22;
+    padding-left: 25px;
+}
+.dropdown-item img{
+    display: inline-block;
+    margin-right: 8px !important;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+#navbarSupportedContent > a + a{
+    margin-left: 31px;
+}
+/* //NAVBAR */
+
+
+/* BANNER */
+.banner {
+    width: 994px;
+    height: 254px;
+    background-color: #EBEBF5;
+    background-image: url(/img/Main/Banner/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 18px;
+    box-shadow: 0px 0px 18.0727px rgba(0, 0, 0, 0.03);
+}
+.banner-text{
+    padding: 41px;
+}
+.banner-text h1{
+    font-weight: normal;
+    font-size: 31.6273px;
+    line-height: 1.2;
+    margin-bottom: 9px;
+}
+.banner-text p{
+    font-size: 19.88px;
+    line-height: 1.21;
+    color: #828282;
+    margin-bottom: 31px;
+}
+.banner-badge {
+    height: 53px;
+    width: 217px;
+    background: #00AC4E;
+    border-color: #00AC4E;
+    border-radius: 5px;
+}
+.banner-badge:hover{
+    background-color: #057035;
+    border-color: #057035;
+}
+.banner-badge p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 25.3018px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+/* //BANNER */
+
+
+/* CARD */
+.card-page-header{
+    margin: 30px 0 40px 0;
+    font-weight: 500;
+    font-size: 27.1585px;
+    line-height: 19px;
+    color: #000000;
+}
+.card-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card {
+    width: 206px !important;
+    /* height: 328px; */
+    border-radius: 4.53px;
+    border:none;
+    margin-bottom: 30px;
+}
+.card-img-box {
+    width: 205px;
+    height: 126px;
+    background-color: #E5E5E5;
+    border-radius: 3px;
+}
+.card-img-box img{
+    width: 60%;
+    height: 60%;
+    margin: 24px 40px;
+}
+.card-img-top {
+}
+.card-body {
+    padding: 9px 0 0 0;
+}
+.card-title {
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14.4845px;
+    line-height: 22px;
+    
+}
+.card-title a{
+    color: #000000;
+}
+.card-text {
+    font-size: 12.674px;
+    line-height: 19px;
+    color: #000000;
+}
+.rating{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 13px;
+    width: 76.47px;
+
+    margin-bottom: 20px;
+}
+.rating-star {
+    height: 13px;
+    width: 13px;
+    border: none;
+    background-color: inherit;
+}
+.star-not-active{
+    background-image: url(/img/Main/Card/star.svg);
+}
+.star-not-active:hover{
+    background-image: url(/img/Main/Card/greenstar.svg);
+}
+.star-active{
+    background-image: url(/img/Main/Card/greenstar.svg); 
+}
+.rating-star img{
+}
+.hidden-star{
+    display: none;
+}
+.food-cost {
+    margin-bottom: 14px;
+}
+#cost-per-kg{
+    font-weight: 500;
+    font-size: 18.1056px;
+    line-height: 1.27;
+    color: #000000;
+}
+#food-weight{
+    font-size: 12.674px;
+    line-height: 1.815;
+    color: #828282;
+    margin-left: 18px;
+}
+.btn {
+    height: 38px;
+    width: 140px;
+    color: #FFFFFF;
+    background-color: #00AC4E;
+    border: #00AC4E;
+}
+.btn:hover {
+    color: white;
+    background-color: #057035;
+}
