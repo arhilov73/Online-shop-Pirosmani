@@ -145,7 +145,7 @@ a{
 
 /* BANNER */
 .banner {
-    width: 994px;
+    width: 944px;
     height: 254px;
     background-color: #EBEBF5;
     background-image: url(/img/Main/Banner/banner.jpg);
@@ -296,4 +296,10 @@ a{
 .btn:hover {
     color: white;
     background-color: #057035;
+}
+/* //CARD */
+
+
+.carousel-item{
+    width: 100%;
 }
